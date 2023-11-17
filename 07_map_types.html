@@ -226,7 +226,7 @@
                 </div>
                 <!-- Dasymetric Map-->
                 <div class="row gx-0 justify-content-center" id="dasy_map">
-                    <div class="col-lg-6 card" style="padding-top: 1rem;">
+                    <div class="col-lg-6 card" style="padding-top: 4rem;">
                         <img class="img-fluid" src="assets/img/ma_dasymetric1.jpg"/>
                         <p class="text-center">Figure 6. <a href="https://www.usgs.gov/media/images/dasymetric-population-density">Dasymetric Map</a></p>
                     </div>
@@ -244,7 +244,11 @@
                                         ➡️ it depicts <b>quantitative data</b><br>
                                         ➡️ it represents the <b>quantitative or enumerated data</b><br>
                                         <p></p>
-                                        The most special thing about this map is that it employs <b>ancillary data</b> to establish more meaningful boundaries for enumeration units, thereby enhancing the depiction of the geographic distribution of the phenomenon being mapped.
+                                        The most special thing about this map is that it employs <b>ancillary data</b> to establish more meaningful boundaries for enumeration units, thereby enhancing the depiction of the geographic distribution of the phenomenon being mapped. <br>
+                                        <p></p>
+                                        There are two kinds of ancillary data useful for a dasymetric map:<br>
+                                        - Exclusionary: gives the information of areas where the depicted phenomenon is unable to occur<br>
+                                        - Inclusionary: identifies areas where the depicted phenomenon can exist, often to varying degrees<br>
                                         </h5>
                                     </h5>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
@@ -270,6 +274,11 @@
                                         ➡️ it represents the legend as <b> X and Y axis</b><br>
                                         <p></p>
                                         A powerful map for the <b>visual interpretation of spatial patterns</b> of the geospatial data
+                                        <p></p>
+                                        There are three types of bivariate map based on combinations of visual variables:<br>
+                                        - Separable Bivariate Map <br>
+                                        - Configural Bivariate Map <br>
+                                        - Intergral Bivariate Map <br>
                                         <p></p>
                                         </h5>
                                     </h5>
@@ -305,7 +314,7 @@
                                         ➡️ it depicts <b>quantitative differences</b><br>
                                         ➡️ it scales each geographical region <b>according to its attribute value</b>, and employs size as a visual element to represent the data<br>
                                         <p></p>
-                                        This map distorts the <b>size, shape, and/or topological relationships</b> of the enumeration units it visualises.
+                                        This map distorts the <b>size, shape, and/or topological relationships</b> of the enumeration units it visualises.<br>
                                         </h5>
                                     </h5>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
@@ -328,7 +337,9 @@
                                         <p></p>
                                         ➡️ it uses location as visual variable on map, and other variables (e.g. size) can be added to show <b>qualitative and quantitative data</b>.<br>
                                         <p></p>
-                                        By having diagrams on the map and visualise it on the centroid of enumeration unit, <b>the non-geographic attributes and temporal pattern</b> can be seen on it.
+                                        By having diagrams on the map and visualise it on the centroid of enumeration unit, <b>the non-geographic attributes and temporal pattern</b> can be seen on it.<br>
+                                        <p></p>
+                                        You can use univariate diagram, comparative diagram, pairwise diagram, multivariate diagram, and temporal diagram on this map.
                                     </h5>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
@@ -344,7 +355,7 @@
                 </div>
                 <!-- Isoline Map-->
                 <div class="row gx-0 justify-content-center" id="isoline_map">
-                    <div class="col-lg-6 card" style="padding-top: 2rem;">
+                    <div class="col-lg-6 card" style="padding-top: 6rem;">
                         <img class="img-fluid" src="assets/img/ma_isoline1.png"/>
                         <p class="text-center">Figure 10. <a href="https://vividmaps.com/south-africa-drive-time-map/">Isoline Map</a></p>
                     </div>
@@ -358,9 +369,12 @@
                                     <h5 class="mb-0" style="text-align: justify; color:whitesmoke">
                                         In the figure 10, we can see the example of isoline map.<br>
                                         <p></p>
-                                        Thematic representation on a map created by <b>drawing lines through interpolation</b>, connecting points with the <b>same attribute value</b>.<br>
+                                        Thematic representation on a map created by <b>drawing lines through interpolation</b>, connecting points with the <b>same attribute value</b>. 
+                                        These lines can be referred to as either <b>isometric lines or isoplethic lines</b>.<br>
                                         <p></p>
-                                        These lines can be referred to as either <b>isometric lines or isoplethic lines</b>.
+                                        Isometric maps are thematic representations that employ isolines created by interpolating values obtained from specific sample points, which may already exist (e.g., weather stations).
+                                        <p></p>
+                                        Isoplethic maps are thematic representations that utilize isolines derived from the interpolation of values associated with geographic regions.
                                     </h5>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
@@ -389,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 card" style="padding-top: 10rem;">
+                    <div class="col-lg-6 card" style="padding-top: 6rem;">
                         <img class="img-fluid" src="assets/img/ma_dotden1.webp" />
                         <p class="text-center">Figure 11. <a href="https://www.caliper.com/glossary/what-is-a-thematic-map.htm">Dot Density Map</a></p>
                         <p></p>
@@ -440,9 +454,50 @@
                 <div class="btn btn-primary" id="check" onclick="checkRight()"> Check your answers </div>
                 <p id="checkRight" style="color:#64a19d; font-size: 24px; padding-top: 1rem;"></p>
             </div>
-        </section>    
+        </section>
+
+        <!--Quiz!-->
+        <!--this script is taken from: https://codepen.io/gcarino/pen/AaJBOo-->
+        <section class="bg-light">
+            <div id='container'>
+                <div id='quiz_01'>
+                    <h2>Quiz #3: Map Types</h2>
+                    <h4>&#128273; for the next chapter</h4>
+                </div>
+                <br/>
+                <div id='quiz'></div>
+                <a class='btn btn-dark' id='next' href='#'>Next</a>
+                <a class='btn btn-light' id='prev' href='#'>Prev</a>
+                <a class='btn btn-light' id='try' href='#'>Try Again</a>
+                <a class='btn btn-light dropdown-toggle' type="button" id="further" data-bs-toggle="dropdown" style="min-width: 300px;">
+                    Choose One Map Type
+                <ul class="dropdown-menu dropmn" aria-labelledby="further">
+                    <li><a class="dropdown-item" href="03_choropleth.html">Choropleth Map</a></li>
+                    <li><a class="dropdown-item" href="04_proportional_symbol.html">Proportional Symbol Map</a></li>
+                    <li><a class="dropdown-item" href="05_flow_map.html">Flow Map</a></li>
+                </ul>
+                </a>
+                <p class="text-black mb-4">
+                    Hi! R U stuck here? Please <a style="color: black;" href="#contacts">contact me</a> &#128521;&#11015;&#65039; 
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="emergency" data-bs-toggle="dropdown" style="min-width: 100px;">
+                            Emergency &#128273;
+                        </button>
+                        <ul class="dropdown-menu dropmn" aria-labelledby="emergency">
+                            <li><a class="dropdown-item" href="03_choropleth.html">Choropleth Map</a></li>
+                            <li><a class="dropdown-item" href="04_proportional_symbol.html">Proportional Symbol Map</a></li>
+                            <li><a class="dropdown-item" href="05_flow_map.html">Flow Map</a></li>
+                        </ul>
+                    </div>
+                </p>
+                <p class="text-black mb-4">
+                    You are allowed to use this button if you cannot do the quiz
+                </p>                               
+            </div>
+        </section>
+
         <!--Common Map Types-->
-        <section class="projects-section bg-light" id="commonmaps" style="padding-top: 2em;">
+        <section class="projects-section bg-light" id="commonmaps" style="padding-top: 5em;">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <h2 class="text-black mb-4 text-center"><b>Which Map Type Do You Want to Learn Further?</b></h2>
@@ -496,56 +551,15 @@
                   </table>
             </div>
         </section>
-        <!--Quiz!-->
-        <!--this script is taken from: https://codepen.io/gcarino/pen/AaJBOo-->
-        <section class="bg-light">
-            <div id='container'>
-                <div id='quiz_01'>
-                    <h2>Quiz #3: Map Types</h2>
-                    <h4>&#128273; for the next chapter</h4>
-                </div>
-                <br/>
-                <div id='quiz'></div>
-                <a class='btn btn-dark' id='next' href='#'>Next</a>
-                <a class='btn btn-light' id='prev' href='#'>Prev</a>
-                <a class='btn btn-light' id='try' href='#'>Try Again</a>
-                <a class='btn btn-light dropdown-toggle' type="button" id="further" data-bs-toggle="dropdown" style="min-width: 300px;">
-                    Choose One Map Type
-                <ul class="dropdown-menu dropmn" aria-labelledby="further">
-                    <li><a class="dropdown-item" href="03_choropleth.html">Choropleth Map</a></li>
-                    <li><a class="dropdown-item" href="04_proportional_symbol.html">Proportional Symbol Map</a></li>
-                    <li><a class="dropdown-item" href="05_flow_map.html">Flow Map</a></li>
-                </ul>
-                </a>
-                <p class="text-black mb-4">
-                    Hi! R U stuck here? Please <a style="color: black;" href="#contacts">contact me</a> &#128521;&#11015;&#65039; 
-                    <div class="dropdown d-inline-block">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="emergency" data-bs-toggle="dropdown" style="min-width: 100px;">
-                            Emergency &#128273;
-                        </button>
-                        <ul class="dropdown-menu dropmn" aria-labelledby="emergency">
-                            <li><a class="dropdown-item" href="03_choropleth.html">Choropleth Map</a></li>
-                            <li><a class="dropdown-item" href="04_proportional_symbol.html">Proportional Symbol Map</a></li>
-                            <li><a class="dropdown-item" href="05_flow_map.html">Flow Map</a></li>
-                        </ul>
-                    </div>
-                </p>
-                <p class="text-black mb-4">
-                    You are allowed to use this button if you cannot do the quiz
-                </p>                               
-            </div>
-        </section>
         <!--References-->
-        <section class="projects-section text-center bg-light" id="references" style="padding-top: 5rem ;">
+        <section class="projects-section text-center bg-light" id="references" style="padding-top: 2rem ;">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h3 class="text-black mb-4">References</h3>
                         <p class="text-black-50" style="text-align: left;">
-                            - Bertin, J. (1967). Sémiologie graphique. Les diagrammes Les réseaux Les cartes. Paris: Gauthier-Villars. <br>
-                            - By, R., Huisman, Otto, and Kraak, Menno-Jan. 2013. The core of GIScience: a process-based approach. Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente. The Netherlands.<br>
-                            - Köbben, B. 2018. Open educational resources for cartography: the Thematic Mapping Tutor (Tech. Rep. No. e27203v1). PeerJ Inc. Retrieved 2022-03-25, from https://peerj.com/preprints/27203 (ISSN: 2167-9843) <br>
-                            - Roth, R.E,. 2017. Visual Variables. John Wiley & Sons, Ltd. DOI: 10.1002/9781118786352.wbieg0761.
+                            - Golebiowska, I., Korycka-Skorupa, J., and Slomska-Przech, K. (2021). Common Thematic Map Types.  The Geographic Information Science & Technology Body of Knowledge (2nd Quarter 2021 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2021.2.7<br>
+                            - Kraak MJ, RE Roth, B Ricker, A Kagawa, and G Le Sourd. 2020. Mapping for a Sustainable World. The United Nations: New York, NY (USA). <br>
                         </p>
                     </div>
                 </div>
